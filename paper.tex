@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{linguex}
+\usepackage{xcolor}
+\usepackage{url}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\usepackage{amsmath,amssymb}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+
+\usepackage{amsfonts}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+
+\usepackage{xcolor}
+
+\newcommand\mhahn[1]{{\color{red}(mhahn: #1)}}
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{Modeling Human Nonliteral Comprehension with Neural Noisy-Channel Models}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+It has long been documented that humans do not always understand language literally.
+In particular, noncanonical structures are often misunderstood as surface-similar and more plausible structures when they express implausible meanings.
+Nonliteral understanding has been proposed to arise due to heuristic parsing strategies or rational noisy-channel comprehension.
+However, little work has been done to computationally model nonliteral understanding in order to systenmatically test these theories.
+We present a series of modeling studies using neural noisy-channel models, trained on large-scale text data, which we apply to model behavioral data.
+Our results suggest that XXX.
+\end{abstract}
+
+\section{Introduction}
+
+Ferreira 200 (passives), 2003 (noncanonical)
+
+Gibson et al 2013
+
+what else?
+
+Meng\&Bader (our modeling approach is essentially agnostic)
+\url{https://www.colorado.edu/event/cuny2019/sites/default/files/attached-files/c16_burnsky_staub.pdf}, \url{https://journals.sagepub.com/doi/abs/10.1177/1747021820947940}
+
+
+reaction/decision times: \url{http://www.paaljapan.org/conference2011/ProcNewest2011/pdf/oral/3E-2.pdf}
+
+empirical results:
+
+- regularization towards more frequent structures
+
+- regularization towards plausibility
+
+- size principle
+
+- perceived noise rate
+
+- semantically anomalous meanings likely to be communicated (our models probably won't do this)
+
+- also consider work on aphasia
+
+
+
+\section{Noise Models}
+
+\paragraph{Deletion Noise}
+
+\paragraph{Insertion Noise}
+
+\paragraph{Version 1: Uniform Deletion Noise}
+
+\paragraph{Version 2: Rational Deletion Noise}
+
+\paragraph{Version 3: Unigram Insertion Noise}
+
+\paragraph{Version 4: Distribution-Aware Insertion Noise}
+
+- run the denoising autoencoder for uniform noise
+
+\section{Setup}
+
+\subsection{Noise and Recovery}
+\paragraph{Version 1: Recovery}
+
+\paragraph{Version 2: Noise+Recovery}
+
+`psychological noise'
+
+resource-rational encoding
+
+\subsection{Noise Rate}
+\paragraph{Version 1: Fixed Noise Rate}
+
+\paragraph{Version 2: Mixture of Noise Rates}
+
+\paragraph{Version 3: Inference of Noise Rate}
+
+\section{Implementation}
+
+- amortized posterior
+
+- optimized loss model
+
+- reweighting with language model (importance sampling)
+
+- dependency parsing
+
+
+
+
+\end{document}

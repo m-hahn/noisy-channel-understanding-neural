@@ -1,0 +1,11 @@
+.*aux
+*.toc
+*.swp
+*.swo
+*.aux
+*.log
+paper.pdf
+*.swn
+paper.bbl
+paper.blg
+*.out
